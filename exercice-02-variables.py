@@ -34,7 +34,7 @@ integer = 2
 integer = float(integer)
 print(integer)
 float = 1.62
-print(round(float))
+print(round(float), 0)
 print(round(float, 1))
 float = int(float)
 print(float)
