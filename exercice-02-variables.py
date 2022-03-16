@@ -38,3 +38,31 @@ print(round(float), 0)
 print(round(float, 1))
 float = int(float)
 print(float)
+
+
+a = 123
+
+b = 42
+
+#swapper les valeurs
+
+
+#ma méthode
+varA = b
+varB = a
+if (varA == 42 and varB == 123) :
+    print("elements swappés")
+else:
+    print("elements non swappés")
+
+#méthode officielle python
+a, b = b, a
+
+#méthode arithmétique
+
+
+#Arrondi
+import decimal #la fonxtion import appelle des librairies
+from decimal import ROUND_HALF_UP, Decimal
+
+decimal.getcontext().rounding = decimal.ROUND_HALF_UP

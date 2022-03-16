@@ -17,8 +17,12 @@ print(number)
 number = random.randint(0, 1)
 print(number)
 
-# réponse 4.1
 
+# réponse 4.1
+if number == 1:
+    print("le nombre est égal à 1")
+else:
+    print("le nombre est différent de 1")
 # code 4.2
 # si 10 est un nombre pair, le modulo de 2 est égal à zéro
 print(10 % 2)
@@ -31,11 +35,16 @@ print(21 % 2)
 # - "le nombre est impair" si le modulo par 2 de la variable number n'est pas égal à zéro
 
 # affectaction d'un nombre entier entre 0 et 9 à la variable number
-number = random.randint(0, 9)
-print(number)
+
+
 
 # réponse 4.2
-
+number = random.randint(0, 9)
+print(number)
+if number % 2 == 0:
+    print("le nombre est pair")
+else: 
+    print("le nombre est impair")
 # exo 4.3
 # Écrivez un bloc if qui affiche
 # - "le nombre est divisible par 3" si la variable number est divisible par 3
@@ -46,7 +55,10 @@ number = random.randint(0, 9)
 print(number)
 
 # réponse 4.3
-
+if number % 3 == 0:
+    print("le nombre est un mutliple de 3")
+else:
+    print("le nombre n'est pas un multiple de 3")
 # exo 4.4
 # écrivez un bloc if qui affiche
 # - "le nombre est supérieur ou égale à 5" si la variable number contient une valeur plus grande ou égale à 5
@@ -57,7 +69,10 @@ number = random.randint(0, 9)
 print(number)
 
 # réponse 4.4
-
+if number >=5:
+    print("le nombre est supérieur ou égal à 5")
+else:
+    print("le nombre inférieur à 5")
 # exo 4.5
 # écrivez un bloc if qui affiche
 # - "le nombre est compris entre 0 et 49 inclus" si la variable number contient une valeur comprise entre 0 et 49
@@ -68,7 +83,10 @@ number = random.randint(0, 99)
 print(number)
 
 # réponse 4.5
-
+if number <= 49:
+    print("le nombre est compris en tre 0 et 49 inclus")
+else:
+    print("le nombre n'est pas compris entre 0 et 49 inclus")
 # exo 4.6
 # écrivez un bloc if qui affiche
 # - "le nombre est compris entre 0 et 33 inclus" si la variable number contient une valeur comprise entre 0 et 33
@@ -80,7 +98,12 @@ number = random.randint(0, 99)
 print(number)
 
 # réponse 4.6
-
+if number <= 33:
+    print("le nombre est inférieur ou égal à 33")
+elif 34 <= number <= 66:
+    print("le nombre est inclus en 34 et 66")
+else:
+    print("le nombre est supérieur à 67")
 # exo 4.7
 # écrivez un bloc if qui affiche
 # - "le nombre a est supérieur au nombre b" si la variable a contient une valeur plus grande que celle de la variable b
@@ -96,7 +119,12 @@ b = random.randint(0, 99)
 print(b)
 
 # réponse 4.7
-
+if a < b:
+    print("a est inférieur à b")
+elif a > b:
+    print ("a est supérieur à b")
+else:
+    print("a et b sont égaux")
 # code 4.3
 # affichage d'une variable avec une f-string
 number = 42
@@ -117,4 +145,10 @@ mails = random.randint(0, 5)
 print(mails)
 
 # réponse 4.8
+if  mails == 0:
+    print("il n'y a pas de mails")
+elif mails == 1:
+    print("il y a un mail")
+else: 
+    print("il y a " + str(mails) + " mails")
 
